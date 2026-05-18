@@ -1,0 +1,22 @@
+# Recovery Notes: Photon Imessage Sender
+
+- Startup name: Photon Imessage Sender
+- Folder: /Users/joshuadavis/startups/imessage
+- One-line description: Photon iMessage Sender A production-oriented Next.
+- Target user: Founders, operators, and investors evaluating or launching new ventures.
+- Problem: Promising ideas and early ventures lose momentum when positioning, product readiness, and execution priorities are unclear.
+- Solution: An AI-assisted workflow that packages expertise, context, and decisions into a more usable product experience.
+- MVP goal: Make the core photon imessage sender experience clear, navigable, buildable with pnpm, and ready for manual Vercel deployment.
+- Main pages/routes: /
+- Current state: Buildable pnpm web project with preserved routes and deployment hygiene.
+- Useful work preserved: Existing source, route structure, public assets, docs, package metadata, pnpm lockfile, and env examples were preserved.
+- Broken/drifted areas: No blocking code drift detected during this cycle.
+- Improvements made: Cleaned generated local artifacts after validation (248K -> 248K).
+- Build/deploy status: Ready for manual Vercel deployment after fresh pnpm install/build.
+- Large files flagged: None over 25 MB after excluding generated/cache directories.
+- Return-later commands:
+  - pnpm install
+  - pnpm lint
+  - pnpm typecheck (no typecheck script present)
+  - pnpm build
+  - vercel --prod
