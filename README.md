@@ -61,7 +61,7 @@ Commands are included only when they were detected in the repository manifest; v
 - **Primary language:** undetermined
 - **Runtime:** undetermined
 - **Package manager:** undetermined
-- **Framework and integration signals:** See the source tree and package manifests
+- **Framework and integration signals:** See the source tree and package manifests; no framework claim is made here without a direct implementation reference.
 - **Entry-point signals:** None recorded
 - **Test evidence:** No test evidence recorded in the inventory
 - **Repository topics:** `react`, `typescript`, `app`, `components`, `dung30n5`, `next-js`, `noaerth`, `prototype`
