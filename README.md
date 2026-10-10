@@ -1,156 +1,89 @@
-# Photon iMessage Sender
+# imessage
 
-A production-oriented Next.js app that sends iMessages via Photon Codes using a secure server-side API route.
+> A small form for one consented iMessage. Built in Zod. One route (/api/send); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-## What this app does
+The implementation summary below is intentionally conservative. Claims from NORTHSTAR are not presented as shipped functionality.
 
-- Renders a minimal web form for:
-  - iMessage phone number
-  - message text
-- Sends form data to `POST /api/send`
-- Validates and normalizes input on the server
-- Uses Photon SDK **only on the server** (never in client code)
-- Returns clear success/error states in the UI
+- [GitHub repository](https://github.com/M4G3LL4N0/imessage)
+- [Project site](https://imessage-eight.vercel.app/)
 
-## Tech stack
+<!-- NOAERTH_IMAGE_SLOT: imessage/hero -->
 
-- Next.js (App Router)
-- TypeScript
-- pnpm
-- Vercel-compatible server route (`runtime = "nodejs"`)
-- `zod` for validation
-- `@photon-ai/advanced-imessage-kit` for Photon integration
+## What it is
 
-## Required environment variables
+A small form for one consented iMessage. Built in Zod. One route (/api/send); 1 entry point (index.html). PROTOTYPE. No test suite committed.
 
-Create a local env file from the example:
+This repository is part of the NOAERTH venture ecosystem. The current public-facing evidence identifies it as a prototype / active development rather than a production-ready system.
 
-```bash
-cp .env.local.example .env.local
+## Capabilities
+
+### Available evidence
+
+- The repository contains the implementation and documentation associated with the project description above.
+- The technology signals currently visible in the local project are listed in the technical notes below.
+- No additional capability is asserted here without a direct implementation reference.
+
+### Experimental or planned
+
+Roadmap intent is deliberately not represented as shipped functionality. Review NORTHSTAR and source implementation together before adding future-facing claims.
+
+<!-- NOAERTH_IMAGE_SLOT: imessage/workflow -->
+
+## How it works
+
+The current evidence supports a repository-level application or tool workflow, but does not provide enough verified detail in the Part 1 record to publish a component-level architecture diagram. The architecture slot is reserved for a deterministic diagram after the source flow is reviewed.
+
+<!-- NOAERTH_IMAGE_SLOT: imessage/architecture -->
+
+## Quick start
+
+### Prerequisites
+
+- A runtime suitable for `undetermined`.
+- A clean checkout of this repository.
+
+### Install
+
+```sh
+Install the runtime and dependencies described by the repository manifests.
 ```
 
-Set the following values:
+### Run locally
 
-- `PHOTON_SERVER_URL` - Your Photon server URL
-- `PHOTON_API_KEY` - Your Photon API key
-
-## Install and run locally
-
-```bash
-pnpm install
-pnpm dev
+```sh
+Use the repository's documented entry point after installing dependencies.
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Commands are included only when they were detected in the repository manifest; verify environment-specific requirements before deployment.
 
-## Build and run production locally
+## Technical notes
 
-```bash
-pnpm build
-pnpm start
-```
+- **Primary language:** undetermined
+- **Runtime:** undetermined
+- **Package manager:** undetermined
+- **Framework and integration signals:** See the source tree and package manifests
+- **Entry-point signals:** None recorded
+- **Test evidence:** No test evidence recorded in the inventory
+- **Repository topics:** `react`, `typescript`, `app`, `components`, `dung30n5`, `next-js`, `noaerth`, `prototype`
 
-## Deploy to Vercel
+## Status and roadmap
 
-1. Create a Vercel project from this repository.
-2. In Vercel project settings, add:
-   - `PHOTON_SERVER_URL`
-   - `PHOTON_API_KEY`
-3. Deploy.
+**Current status:** Prototype / active development.
 
-CLI deployment flow:
+**Current:** The repository and its documented implementation are available for inspection.
 
-```bash
-pnpm dlx vercel
-pnpm dlx vercel --prod
-```
+**Next:** Reconcile the README, source behavior, and safe public product language before adding deeper examples or diagrams.
 
-## Security notes
+**Future:** Product direction is maintained separately and must not be read as a shipped feature list.
 
-- Never expose `PHOTON_API_KEY` in client-side code.
-- Keep all Photon initialization and message sending inside `app/api/send/route.ts`.
-- Do not commit `.env.local` or any real credentials.
+## Contributing and license
 
-<!-- TRILLIONX:presentation:begin -->
+Follow the repository's existing contribution and licensing files where present. This README does not invent an open-source license or contribution policy.
 
-### Animated surfaces
+## Visual documentation
 
-Generated from this repository's own source tree: every count, route and module below was measured, not written by hand.
+Image slots are intentionally comments until authentic screenshots, deterministic diagrams, or approved conceptual visuals exist. No absent image file is referenced.
 
-#### Identity
+## NOAERTH
 
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/hero-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/hero-light.svg">
-  <img alt="Identity diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/hero-motion.svg">
-</picture>
-
-#### Entry points
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/terminal-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/terminal-light.svg">
-  <img alt="Entry points diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/terminal-motion.svg">
-</picture>
-
-#### Modules
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/architecture-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/architecture-light.svg">
-  <img alt="Modules diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/architecture-motion.svg">
-</picture>
-
-#### Routes
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/data_flow-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/data_flow-light.svg">
-  <img alt="Routes diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/data_flow-motion.svg">
-</picture>
-
-#### Composition
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/component_map-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/component_map-light.svg">
-  <img alt="Composition diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/component_map-motion.svg">
-</picture>
-
-#### Build and tests
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/build-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/build-light.svg">
-  <img alt="Build and tests diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/build-motion.svg">
-</picture>
-
-#### Identity object
-
-<picture>
-  <source media="(prefers-reduced-motion: reduce)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/footer-reduced.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/footer-light.svg">
-  <img alt="Identity object diagram for imessage" src="https://raw.githubusercontent.com/M4G3LL4N0/imessage/main/.github-art/surfaces/footer-motion.svg">
-</picture>
-
-<!-- TRILLIONX:presentation:end -->
-
-<!-- TRILLIONX:evidence:begin -->
-
-## What is measurable here
-
-Generated by `.github-art` from the source tree at publish time.
-
-| Signal | Value |
-| --- | --- |
-| HTTP routes | 2 |
-| Entry points | 1 |
-| Module roots | 2 |
-| Test files | 0 |
-| CI workflows | 0 |
-| Distinctive stack | Zod |
-| Status | PROTOTYPE |
-| Evidence confidence | E2 |
-| Animated surfaces | 7 |
-
-<!-- TRILLIONX:evidence:end -->
+[NOAERTH](https://www.noaerth.com) is the venture ecosystem associated with this project.
